@@ -8,23 +8,41 @@
 </head>
 
 <body>
-    <nav class="navegacion">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./packs.html">Paquetes</a></li>
-            <li><a href="./faqs.html">Preguntas Frecuentes</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <h1>Contacto</h1>
+    <header>
+        <div class="logo">
+            <div>
+                <img class="imagen-logo" width="100px" src="../resources/Logo pagina elias.png" alt="logo">
+            </div>
+            <h1 class="texto-logo">MY FITNESS ROUTINE</h1>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./packs.html">Paquetes</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./faqs.html">Preguntas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <form action="#" method="get" class="formulario">
-        <input type="name" placeholder="Nombre" name="Nombre">
-        <input type="surname" placeholder="Apellido" name="Apellido">
-        <input type="email" placeholder="Email" name="Email">
-        <input type="submit" value="Enviar">
-    </form>
+    <main class="main-index">
+        <h1>¡Contactanos!</h1>
+        <form action="#" method="get" class="formulario">
+            <input type="name" placeholder="Nombre" name="nombre">
+            <br>
+            <input type="surname" placeholder="Apellido" name="apellido">
+            <br>
+            <input type="date" placeholder="Nacimiento" name="nacimiento">
+            <br>
+            <input type="email" placeholder="Email" name="email">
+            <br>
+            <p>¿Querés recibir más información?</p>
+            <input type="checkbox" name="newsletter" id="">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
 </body>
 
 </html>

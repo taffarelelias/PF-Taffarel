@@ -1,0 +1,225 @@
+.texto-inicio{
+    color: #979a8c;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $font1;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.texto-logo{
+    color: #979a8c;
+    font-family: $font1;
+    font-size: 40px;
+}
+
+.parrafo-inicio {
+    color: $color2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: $font3;
+    font-size: 15px;
+}
+
+body {
+    background-color: $colorbody;
+}
+
+header, footer{
+    background-color: $colorheader;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+/* Menú de Navegación */
+nav {
+    list-style: none;
+    li{
+        display: inline-block;
+        padding: 0 20px;
+        a{
+            color: $colorlinks;
+            text-decoration: none;
+            font-family: $font1;
+        }
+    }
+}
+
+.nav{
+    flex-wrap: unset;
+}
+/* Imagenes */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.imagen-logo{
+    width: 120px;
+    height: 120px;
+}
+
+.silueta {
+    display: flex;
+    transform: scaleX(-1);
+    width: 200px;
+    float: right;
+}
+
+.row{
+    --bs-gutter-x: 0rem;
+}
+
+.navbar{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header{
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo-strong{
+        width: 100px;
+    }
+
+    .marca{
+        width: 200px;
+    }
+
+    .inicio{
+        padding: 0;
+        margin: 0;
+    }
+
+    .parrafo-inicio{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .navbar{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .bg-dark{
+        background-color: #4A4E69 !important;
+    }
+    .collapse{
+        background-color: #4A4E69;
+    }
+    .collapse ul{
+        list-style-type: none;
+    }
+    .collapse li a{
+        text-decoration: none;
+        list-style-type: none;
+        color: black;
+        font-family: $font1;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+    }
+    .collapsing{
+        background-color: #4A4E69;
+    }
+    .collapsing ul{
+        list-style-type: none;
+    }
+    .collapse li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: black;
+        font-family: $font1;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .navbar-toggler{
+        margin-top: 22px;
+    }
+}
+
+@media (max-width: 376px){
+    header{
+        width: 500px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .texto-logo{
+        display: none;
+    }
+
+    .logo-strong{
+        width: 100px;
+        height: 100px;
+    }
+
+    .marca{
+        width: 200px;
+        height: 23.725px;
+        
+    }
+
+    .inicio{
+        padding: 0;
+        text-align: center;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .nav ul li{
+        display: flex;
+    }
+
+    .navbar{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .bg-dark{
+        background-color: #4A4E69 !important;
+    }
+    .collapse{
+        background-color: #4A4E69;
+    }
+    .collapse ul{
+        list-style-type: none;
+    }
+    .collapse li a{
+        text-decoration: none;
+        list-style-type: none;
+        color: black;
+    }
+    .collapsing{
+        background-color: #4A4E69;
+    }
+    .collapsing ul{
+        list-style-type: none;
+    }
+    .collapsing li a{
+        text-decoration: none;
+        color: black;
+    }
+    .navbar-toggler{
+        margin-top: 22px;
+    }
+}
